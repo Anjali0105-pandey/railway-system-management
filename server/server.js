@@ -8,6 +8,10 @@ app.use('/post', (req, res) => {
 app.use('/user', (req, res) => {
   res.send('This is user page')
 })
+
+app.use('/', () => {
+    res.send('index page')
+})
 app.listen(3000, console.log('server started'))
 
 // node
